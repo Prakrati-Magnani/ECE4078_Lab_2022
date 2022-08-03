@@ -143,10 +143,10 @@ class Operate:
                 self.command['motion'] = [-1, 0]            
             # turn left
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_LEFT:
-                self.command['motion'] = [1, 1] 
+                self.command['motion'] = [0, 1] #[1,1] for wide arc
             # drive right
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_RIGHT:
-                self.command['motion'] = [1, -1]
+                self.command['motion'] = [0, -1] #[1,-1] for wide arc
             ####################################################
             # stop
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
